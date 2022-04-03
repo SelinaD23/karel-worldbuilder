@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header.js'
+import KarelContainer from './components/KarelContainer.js'
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <h1 class="bg-red-400">Hello.</h1> */} 
     <Header />
+    <KarelContainer />
   </React.StrictMode>,
   document.getElementById('root')
 );
