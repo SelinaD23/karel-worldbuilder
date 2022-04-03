@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1 class="bg-red-400">Hello.</h1>
+    {/* <h1 class="bg-red-400">Hello.</h1> */} 
+    <Header />
   </React.StrictMode>,
   document.getElementById('root')
 );
