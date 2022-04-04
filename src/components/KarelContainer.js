@@ -1,8 +1,6 @@
 import React from "react"
-import Header from "./Header"
 import Map from "./Map"
 import Output from "./Output"
-import { v4 as uuidv4 } from "uuid";
 
 class KarelContainer extends React.Component {
     // Adding States
@@ -108,6 +106,30 @@ class KarelContainer extends React.Component {
         });
     };
 
+    generateMap = blah => {
+        console.log("Generating Map");
+        var beepers = [];
+        var vertical = []
+        var horizontal = []
+
+        this.state.buttons.filter(buttons => {
+
+            if (buttons.beeper == true) {
+                beepers.push((buttons.beeperCommand));
+            }
+            if (buttons.vertical == true) {
+                vertical.push((buttons.verticalCommand));
+            }
+            if (buttons.horizontal == true) {
+                horizontal.push((buttons.horizontalCommand));
+            }
+        });
+
+        console.log(beepers.join('\n'));
+        console.log(vertical.join('\n'));
+        console.log(horizontal.join('\n'));
+    }
+
     render() {
         return (
             <div>
@@ -117,7 +139,10 @@ class KarelContainer extends React.Component {
                     verticalPress={this.verticalPress}
                     horizontalPress={this.horizontalPress}
                 />
-                <Output />
+                <Output 
+                    buttons={this.state.buttons}
+                    generateMap={this.generateMap}
+                />
             </div>
         );
     };

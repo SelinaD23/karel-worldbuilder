@@ -14,7 +14,7 @@ class Map extends React.Component {
                         beeperPress={this.props.beeperPress}
                     />
                 ))}
-
+                <br></br>
                 {this.props.buttons.map(buttons => (
                     <Vertical
                         key={buttons.id}
@@ -22,7 +22,7 @@ class Map extends React.Component {
                         verticalPress={this.props.verticalPress}
                     />
                 ))}
-
+                <br></br>
                 {this.props.buttons.map(buttons => (
                     <Horizontal
                         key={buttons.id}
