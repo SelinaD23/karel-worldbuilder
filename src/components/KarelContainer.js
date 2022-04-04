@@ -106,7 +106,7 @@ class KarelContainer extends React.Component {
         });
     };
 
-    generateMap = blah => {
+    generateMap = blah => { // I couldn't get this to run without a parameter so...
         console.log("Generating Map");
         var beepers = [];
         var vertical = []
