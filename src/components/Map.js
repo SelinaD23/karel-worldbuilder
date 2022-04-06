@@ -2,35 +2,27 @@ import React from "react"
 import Beeper from "./Beeper"
 import Vertical from "./Vertical"
 import Horizontal from "./Horizontal"
+import World from "../World.png"
+import MapLocation from "./MapLocation"
 
 class Map extends React.Component {
     render() {
         return (
-            <ul>
-                {this.props.buttons.map(buttons => (
+            // For stretch: Replace backgroundRepeat:"no-repeat" with backgroundSize: "cover", overflow: "hidden"
+            //  class="grid grid-cols-4 gap-4 content-evenly" 
+            <div style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
+                {this.props.buttons.map((buttons, count) => {
                     <Beeper
                         key={buttons.id}
-                        buttons={buttons}
+                        buttons={this.props.buttons}
                         beeperPress={this.props.beeperPress}
                     />
-                ))}
-                <br></br>
-                {this.props.buttons.map(buttons => (
-                    <Vertical
-                        key={buttons.id}
-                        buttons={buttons}
-                        verticalPress={this.props.verticalPress}
-                    />
-                ))}
-                <br></br>
-                {this.props.buttons.map(buttons => (
-                    <Horizontal
-                        key={buttons.id}
-                        buttons={buttons}
-                        horizontalPress={this.props.horizontalPress}
-                    />
-                ))}
-            </ul>
+                    console.log(buttons.id);
+                    if (count % 8 == 0) {
+                        <br></br>
+                    }
+                })}
+            </div>
         )
     }
 }
