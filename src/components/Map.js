@@ -9,10 +9,10 @@ class Map extends React.Component {
     render() {
         return (
             <div style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
-                {this.props.buttons.map(buttons => (
+                {this.props.buttons.map(button => (
                     <Beeper
-                        key={buttons.id}
-                        buttons={buttons}
+                        key={button.id}
+                        buttons={button}
                         beeperPress={this.props.beeperPress}
                     />
                 ))}
