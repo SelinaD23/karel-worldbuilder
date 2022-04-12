@@ -5,16 +5,24 @@ import Horizontal from "./Horizontal"
 import World from "../World.png"
 import MapLocation from "./MapLocation"
 
+const ROW_SIZE = 7;
+
 class Map extends React.Component {
+
     render() {
         return (
             <div style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
-                {this.props.buttons.map(button => (
-                    <Beeper
-                        key={button.id}
-                        buttons={button}
-                        beeperPress={this.props.beeperPress}
-                    />
+                {this.props.buttons.map((button, index) => (
+                    <>
+                        <Beeper
+                            key={button.id}
+                            buttons={button}
+                            beeperPress={this.props.beeperPress}
+                        />  
+                        {index === ROW_SIZE &&
+                            <br></br>
+                        }  
+                    </>    
                 ))}
             </div>
             
