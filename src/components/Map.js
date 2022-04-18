@@ -5,7 +5,7 @@ import Horizontal from "./Horizontal"
 import World from "../World.png"
 import MapLocation from "./MapLocation"
 
-const ROW_SIZE = 7;
+const ROW_SIZE = 8;
 
 class Map extends React.Component {
 
@@ -18,8 +18,12 @@ class Map extends React.Component {
                             key={button.id}
                             buttons={button}
                             beeperPress={this.props.beeperPress}
-                        />  
-                        {index === ROW_SIZE &&
+                        />
+                        {
+                        index++
+                        }
+                        {
+                        index % ROW_SIZE === 0 &&
                             <br></br>
                         }  
                     </>    
