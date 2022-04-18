@@ -5,8 +5,8 @@ class Output extends React.Component {
     render() {
         return (
             <div>
-                <textarea id="worldGenerated" name="worldGenerated" cols="75">
-
+                <textarea id="worldGenerated" name="worldGenerated" cols="75" placeholder="Press the Generate World button for kwld format" readonly>
+                    
                 </textarea>
                 <br></br>
                 <Generate 
