@@ -20,10 +20,7 @@ class Map extends React.Component {
                             beeperPress={this.props.beeperPress}
                         />
                         {
-                        index++
-                        }
-                        {
-                        index % ROW_SIZE === 0 &&
+                        ++index % ROW_SIZE === 0 &&
                             <br></br>
                         }  
                     </>    
