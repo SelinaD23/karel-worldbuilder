@@ -11,7 +11,9 @@ class Map extends React.Component {
 
     render() {
         return (
-            <div style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
+            // bg-top
+            // flex flex-wrap items-center justify-center
+            <div class="pl-9 pt-2" style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
                 {this.props.buttons.map((button, index) => (
                     <>
                         <Beeper
@@ -21,7 +23,10 @@ class Map extends React.Component {
                         />
                         {
                         ++index % ROW_SIZE === 0 &&
-                            <br></br>
+                            <>
+                                <br></br>
+                                <br></br>
+                            </>
                         }  
                     </>    
                 ))}
@@ -29,20 +34,6 @@ class Map extends React.Component {
             
 
             // For stretch: Replace backgroundRepeat:"no-repeat" with backgroundSize: "cover", overflow: "hidden"
-            //  class="grid grid-cols-4 gap-4 content-evenly" 
-            // <div style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
-            //     {this.props.buttons.map(buttons => {
-            //         <Beeper
-            //             key={buttons.id}
-            //             buttons={this.props.buttons}
-            //             beeperPress={this.props.beeperPress}
-            //         />
-            //         // console.log(buttons.id);
-            //         // if (count % 8 == 0) {
-            //         //     <br></br>
-            //         // }
-            //     })}
-            // </div>
         )
     }
 }

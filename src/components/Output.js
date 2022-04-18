@@ -4,12 +4,16 @@ import Generate from "./Generate"
 class Output extends React.Component {
     render() {
         return (
-            <ul>
+            <div>
+                <textarea id="worldGenerated" name="worldGenerated" cols="75">
+
+                </textarea>
+                <br></br>
                 <Generate 
                     buttons={this.props.buttons}
                     generateMap={this.props.generateMap}
                 />
-            </ul>
+            </div>
         )
     }
 }
