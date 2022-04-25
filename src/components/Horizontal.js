@@ -2,12 +2,15 @@ import React from "react"
 
 class Horizontal extends React.Component {
     render() {
-        return ( 
-            <button 
-                class="bg-transparent hover:bg-pink-500 text-pink-500 hover:text-white font-semibold py-2 px-4 border border-pink-500 hover:border-transparent rounded" 
-                onClick={() => this.props.horizontalPress(this.props.buttons.id)}>
-                Horizontal
-            </button>
+        return (
+            <span class="">
+                <button 
+                    className="bg-transparent hover:bg-blue-500 text-blue-500 hover:text-white font-semibold w-10 h-10 border border-blue-500 hover:border-transparent rounded-full"
+                    onClick={() => this.props.beeperPress(this.props.buttons.id)}>
+                    {this.props.buttons.id}
+                </button>
+            </span> 
+                
         );
     }
 }

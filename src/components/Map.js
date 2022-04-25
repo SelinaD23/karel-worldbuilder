@@ -13,7 +13,7 @@ class Map extends React.Component {
         return (
             // bg-top
             // flex flex-wrap items-center justify-center
-            <div class="pl-9 pt-2" style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
+            <div class="pl-12 pt-2" style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
                 {this.props.buttons.map((button, index) => (
                     <>
                         <Beeper
@@ -22,9 +22,18 @@ class Map extends React.Component {
                             beeperPress={this.props.beeperPress}
                         />
                         {
+                        button.vertical !== null &&
+                            <>
+                            <Vertical
+                                key={button.id}
+                                buttons={button}
+                                beeperPress={this.props.beeperPress}
+                            />
+                            </>
+                        }
+                        {
                         ++index % ROW_SIZE === 0 &&
                             <>
-                                <br></br>
                                 <br></br>
                             </>
                         }  

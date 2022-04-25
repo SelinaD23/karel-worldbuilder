@@ -24,7 +24,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 8 1 1",
-                verticalCommand: "northsouthwalls 1 1 1",
+                verticalCommand: "northsouthwalls 1 8 8",
                 horizontalCommand: "eastwestwalls 1 1 1",
             },
             {
@@ -33,7 +33,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 8 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 8 8",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -42,7 +42,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 8 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 8 8",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -51,7 +51,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 8 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 8 8",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -60,7 +60,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 8 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 8 8",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -69,7 +69,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 8 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 8 8",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -78,16 +78,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 8 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 8 8",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 88,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 8 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
             {
@@ -96,7 +96,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 7 1 1",
-                verticalCommand: "northsouthwalls 1 1 1",
+                verticalCommand: "northsouthwalls 1 7 7",
                 horizontalCommand: "eastwestwalls 1 1 1",
             },
             {
@@ -105,7 +105,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 7 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 7 7",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -114,7 +114,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 7 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 7 7",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -123,7 +123,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 7 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 7 7",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -132,7 +132,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 7 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 7 7",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -141,7 +141,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 7 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 7 7",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -150,16 +150,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 7 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 7 7",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 78,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 7 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
             {
@@ -168,7 +168,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 6 1 1",
-                verticalCommand: "northsouthwalls 1 1 1",
+                verticalCommand: "northsouthwalls 1 6 6",
                 horizontalCommand: "eastwestwalls 1 1 1",
             },
             {
@@ -177,7 +177,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 6 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 6 6",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -186,7 +186,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 6 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 6 6",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -195,7 +195,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 6 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 6 6",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -204,7 +204,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 6 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 6 6",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -213,7 +213,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 6 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 6 6",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -222,16 +222,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 6 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 6 6",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 68,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 6 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
             {
@@ -240,7 +240,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 5 1 1",
-                verticalCommand: "northsouthwalls 1 1 1",
+                verticalCommand: "northsouthwalls 1 5 5",
                 horizontalCommand: "eastwestwalls 1 1 1",
             },
             {
@@ -249,7 +249,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 5 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 5 5",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -258,7 +258,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 5 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 5 5",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -267,7 +267,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 5 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 5 5",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -276,7 +276,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 5 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 5 5",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -285,7 +285,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 5 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 5 5",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -294,16 +294,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 5 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 5 5",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 58,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 5 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
             {
@@ -312,7 +312,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 4 1 1",
-                verticalCommand: "northsouthwalls 1 1 1",
+                verticalCommand: "northsouthwalls 1 4 4",
                 horizontalCommand: "eastwestwalls 1 1 1",
             },
             {
@@ -321,7 +321,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 4 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 4 4",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -330,7 +330,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 4 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 4 4",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -339,7 +339,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 4 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 4 4",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -348,7 +348,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 4 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 4 4",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -357,7 +357,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 4 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 4 4",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -366,16 +366,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 4 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 4 4",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 48,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 4 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
             {
@@ -384,7 +384,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 3 1 1",
-                verticalCommand: "northsouthwalls 1 1 1",
+                verticalCommand: "northsouthwalls 1 3 3",
                 horizontalCommand: "eastwestwalls 1 1 1",
             },
             {
@@ -393,7 +393,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 3 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 3 3",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -402,7 +402,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 3 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 3 3",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -411,7 +411,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 3 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 3 3",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -420,7 +420,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 3 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 3 3",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -429,7 +429,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 3 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 3 3",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -438,16 +438,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 3 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 3 3",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 38,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 3 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
             {
@@ -456,7 +456,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 2 1 1",
-                verticalCommand: "northsouthwalls 1 1 1",
+                verticalCommand: "northsouthwalls 1 2 2",
                 horizontalCommand: "eastwestwalls 1 1 1",
             },
             {
@@ -465,7 +465,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 2 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 2 2",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -474,7 +474,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 2 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 2 2",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -483,7 +483,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 2 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 2 2",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -492,7 +492,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 2 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 2 2",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -501,7 +501,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 2 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 2 2",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -510,16 +510,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 2 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 2 2",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 28,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 2 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
             {
@@ -537,7 +537,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 1 2 1",
-                verticalCommand: "northsouthwalls 1 2 2",
+                verticalCommand: "northsouthwalls 2 1 1",
                 horizontalCommand: "eastwestwalls 2 1 1",
             },
             {
@@ -546,7 +546,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 1 3 1",
-                verticalCommand: "northsouthwalls 1 3 3",
+                verticalCommand: "northsouthwalls 3 1 1",
                 horizontalCommand: "eastwestwalls 3 1 1",
             },
             {
@@ -555,7 +555,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 1 4 1",
-                verticalCommand: "northsouthwalls 1 4 4",
+                verticalCommand: "northsouthwalls 4 1 1",
                 horizontalCommand: "eastwestwalls 4 1 1",
             },
             {
@@ -564,7 +564,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 1 5 1",
-                verticalCommand: "northsouthwalls 1 5 5",
+                verticalCommand: "northsouthwalls 5 1 1",
                 horizontalCommand: "eastwestwalls 5 1 1",
             },
             {
@@ -573,7 +573,7 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 1 6 1",
-                verticalCommand: "northsouthwalls 1 6 6",
+                verticalCommand: "northsouthwalls 6 1 1",
                 horizontalCommand: "eastwestwalls 6 1 1",
             },
             {
@@ -582,16 +582,16 @@ class KarelContainer extends React.Component {
                 vertical: false, 
                 horizontal: false,
                 beeperCommand: "beepers 1 7 1",
-                verticalCommand: "northsouthwalls 1 7 7",
+                verticalCommand: "northsouthwalls 7 1 1",
                 horizontalCommand: "eastwestwalls 7 1 1",
             },
             {
                 id: 18,
                 beeper: false, 
-                vertical: false, 
+                vertical: null, 
                 horizontal: false,
                 beeperCommand: "beepers 1 8 1",
-                verticalCommand: "northsouthwalls 1 8 8",
+                verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
         ]
