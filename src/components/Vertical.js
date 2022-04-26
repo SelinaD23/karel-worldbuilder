@@ -6,11 +6,10 @@ class Vertical extends React.Component {
             <span class="">
                 <button 
                     className="bg-transparent hover:bg-green-500 text-green-500 hover:text-white font-semibold w-10 h-10 border border-green-500 hover:border-transparent rounded-full"
-                    onClick={() => this.props.beeperPress(this.props.buttons.id)}>
+                    onClick={() => this.props.verticalPress(this.props.buttons.id)}>
                     {this.props.buttons.id}
                 </button>
             </span> 
-                
         );
     }
 }

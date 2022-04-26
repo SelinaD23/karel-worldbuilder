@@ -659,7 +659,7 @@ class KarelContainer extends React.Component {
                 <Map
                     buttons={this.state.buttons}
                     beeperPress={this.beeperPress}
-//                    verticalPress={this.verticalPress}
+                    verticalPress={this.verticalPress}
 //                    horizontalPress={this.horizontalPress}
                 />
                 <Output 

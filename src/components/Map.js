@@ -27,7 +27,7 @@ class Map extends React.Component {
                             <Vertical
                                 key={button.id}
                                 buttons={button}
-                                beeperPress={this.props.beeperPress}
+                                verticalPress={this.props.verticalPress}
                             />
                             </>
                         }
