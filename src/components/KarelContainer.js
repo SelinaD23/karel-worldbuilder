@@ -1,6 +1,7 @@
 import React from "react"
 import Map from "./Map"
 import Output from "./Output"
+import MapText from "./MapText"
 
 class KarelContainer extends React.Component {
     // Adding States
@@ -594,8 +595,14 @@ class KarelContainer extends React.Component {
                 verticalCommand: "NONE",
                 horizontalCommand: "eastwestwalls 8 1 1",
             },
-        ]
+        ],
 
+        text: {             
+            top: ["1-1-east-inf", "streets 8"],           
+            beepers: [],
+            vertical: [],
+            horizontal: []
+        }
     };
 
     beeperPress = id => {
@@ -629,28 +636,33 @@ class KarelContainer extends React.Component {
     };
 
     generateMap = () => {
-        console.log("Generating Map");
-        var beepers = [];
-        var vertical = []
-        var horizontal = []
+        this.state.text = {
+            top: ["1-1-east-inf", "streets 8"],           
+            beepers: [],
+            vertical: [],
+            horizontal: []
+        }
 
+        console.log("Generating Map");
         this.state.buttons.filter(buttons => {
 
             if (buttons.beeper === true) {
-                beepers.push((buttons.beeperCommand));
+                this.state.text.beepers.push((buttons.beeperCommand));
             }
             if (buttons.vertical === true) {
-                vertical.push((buttons.verticalCommand));
+                this.state.text.vertical.push((buttons.verticalCommand));
             }
             if (buttons.horizontal === true) {
-                horizontal.push((buttons.horizontalCommand));
+                this.state.text.horizontal.push((buttons.horizontalCommand));
             }
         });
 
-        console.log("1-1-east-inf\nstreets 8")
-        console.log(beepers.join('\n'));
-        console.log(vertical.join('\n'));
-        console.log(horizontal.join('\n'));
+        console.log(this.state.text.top.join('\n'))
+        console.log(this.state.text.beepers.join('\n'));
+        console.log(this.state.text.vertical.join('\n'));
+        console.log(this.state.text.horizontal.join('\n'));
+
+        this.render()
     }
 
     render() {
@@ -661,6 +673,9 @@ class KarelContainer extends React.Component {
                     beeperPress={this.beeperPress}
                     verticalPress={this.verticalPress}
 //                    horizontalPress={this.horizontalPress}
+                />
+                <MapText 
+                    text={this.state.text}
                 />
                 <Output 
                     buttons={this.state.buttons}
