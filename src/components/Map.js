@@ -9,7 +9,7 @@ class Map extends React.Component {
         return (
             // bg-top
             // flex flex-wrap items-center justify-center
-            <div class="pt-2 pl-14 inline-grid grid-cols-8" style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
+            <div class="pt-2.5 pl-14 inline-grid grid-cols-8" style={{ backgroundImage: `url(${World})`, backgroundRepeat:"no-repeat"}}>
                 {this.props.buttons.map((button, index) => (
                     <ThreeButtons 
                         key={button.id}

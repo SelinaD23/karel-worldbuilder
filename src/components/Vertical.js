@@ -19,7 +19,7 @@ class Vertical extends React.Component {
     render() {
         return (
             <button 
-                className={`${this.state.isPressed === false ? "bg-transparent text-transparent " : "bg-black text-black"} font-semibold w-5 h-10 border border-black rounded-full`}
+                className={`${this.state.isPressed === false ? "bg-transparent" : "bg-gradient-to-r from-gray-500 via-gray-800 to-gray-500"} text-transparent font-semibold w-6 h-10 border-2 border-black rounded-full`}
                 onClick={this.handleClick}>
                 {this.props.buttons.id}
             </button>
