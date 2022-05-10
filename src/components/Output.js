@@ -40,24 +40,25 @@ const Output = (props) => {
         console.log(text.horizontal.join('\n'));
 
         setTopList(topList.concat(text.top));
-        setBeepsList(beepsList.concat(text.beepers.join('\r\n')));
-        setVerticalsList(verticalsList.concat(text.vertical.join('\r\n')));
-        setHorizontalList(horizontalsList.concat(text.horizontal.join('\r\n')));
+        setBeepsList(beepsList.concat(text.beepers));
+        setVerticalsList(verticalsList.concat(text.vertical));
+        setHorizontalList(horizontalsList.concat(text.horizontal));
     }
 
     return (
         <div>
-            {topList.filter(item => (
-                {item}
+            {topList.map((command, index) => (
+                <p>{command}</p>
             ))}
-            {topList}
-            <br></br>
-            {beepsList}
-            <br></br>
-            {verticalsList}
-            <br></br>
-            {horizontalsList}
-            <br></br>
+            {beepsList.map((command, index) => (
+                <p>{command}</p>
+            ))}
+            {verticalsList.map((command, index) => (
+                <p>{command}</p>
+            ))}
+            {horizontalsList.map((command, index) => (
+                <p>{command}</p>
+            ))}
             <Generate 
                 onClick = {generateMap}
             />

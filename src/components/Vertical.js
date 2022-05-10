@@ -1,11 +1,26 @@
 import React from "react"
 
 class Vertical extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isPressed: false,
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState(prevState => ({
+            isPressed: !prevState.isPressed
+          }));
+        this.props.verticalPress(this.props.buttons.id)
+    };
+
     render() {
         return (
             <button 
-                className="bg-transparent hover:bg-green-500 text-green-500 hover:text-white font-semibold w-5 h-10 border border-green-500 hover:border-transparent rounded-full"
-                onClick={() => this.props.verticalPress(this.props.buttons.id)}>
+                className={`${this.state.isPressed === false ? "bg-transparent text-transparent " : "bg-black text-black"} font-semibold w-5 h-10 border border-black rounded-full`}
+                onClick={this.handleClick}>
                 {this.props.buttons.id}
             </button>
         );

@@ -17,7 +17,7 @@ class Map extends React.Component {
                         beeperPress={this.props.beeperPress}
                         verticalPress={this.props.verticalPress}
                         horizontalPress={this.props.horizontalPress}
-                    />    
+                    />
                 ))}
                 <InvisibleButton />
                 <br></br>

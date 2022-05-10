@@ -1,7 +1,6 @@
 import React from "react"
 import Map from "./Map"
 import Output from "./Output"
-import MapText from "./MapText"
 
 class KarelContainer extends React.Component {
     // Adding States
@@ -671,12 +670,8 @@ class KarelContainer extends React.Component {
                     verticalPress={this.verticalPress}
                     horizontalPress={this.horizontalPress}
                 />
-                {/* <MapText 
-                    text={this.state.text}
-                /> */}
                 <Output 
                     buttons={this.state.buttons}
-//                    generateMap={this.generateMap}
                 />
             </div>
         );
